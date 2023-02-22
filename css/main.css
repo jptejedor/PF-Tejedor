@@ -1,6 +1,6 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -10,41 +10,52 @@
 
 @media (max-width: 560px) {
 
-  #que-ofrecemos .container {
-        padding-left: 15px;
-        padding-right: 15px;
+    #que-ofrecemos .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .margen {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
 
-    
-}
+    #evento-promocion .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
- @media (max-width: 576px) {
-
-     
-.texto-fotografia {
-
-   text-align: center;
-  
 
 }
 
-  
-  }
-  
+@media (max-width: 576px) {
 
-  @media screen and (max-width: 575px) {
+
+    .texto-fotografia {
+
+        text-align: center;
+
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 575px) {
     body {
         overflow-x: hidden !important;
     }
+
     .container {
         max-width: 100% !important;
         overflow-x: hidden !important;
+    }
+
+    .nav-mobile {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
@@ -53,7 +64,7 @@
 body {
 
     background-color: #F3F0E4;
-    
+
 }
 
 
@@ -64,35 +75,50 @@ html {
 
 
 
+/* Inicio - HEADER/NAV */
 
-/* Inicio - NAVBAR */
+
+.navbar {
+
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
 
     padding-left: 20px;
     padding-right: 20px;
-   
+
 }
 
 .bg-body-tertiary {
-    background-color: #F3F0E4  !important;
+    background-color: #F3F0E4 !important;
 }
 
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
 
     color: #83D0D2;
 }
 
-/* Fin - NAVBAR */
+/* Fin - HEADER/NAV */
+
+
+
+
+/* Inicio - INDEX.HTML */
+
+
+
 
 /* Inicio - IMAGEN INTRO */
 
 
 #ImgIntro {
 
-   padding-top: 100px;
-   padding-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 0px;
 
 }
 
@@ -102,7 +128,7 @@ html {
 
 .TextoIntro {
 
-    margin: 80px;
+    margin: 80px 60px 60px 60px;
 }
 
 .TextoIntro h1 {
@@ -134,6 +160,13 @@ html {
 
 /* Inicio - UN EDIFICIO CON MUCHA HISTORIA... */
 
+
+#palacio-info {
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .nosotros-extra img {
 
     padding-top: 30px;
@@ -146,9 +179,6 @@ html {
     text-align: left;
 }
 
-#sobre-el-palacio {
-    margin-bottom: 80px;
-}
 
 .br {
     margin-bottom: 19px;
@@ -156,14 +186,109 @@ html {
 
 /* Fin - UN EDIFICIO CON MUCHA HISTORIA... */
 
-/* Inicio - QUE OFRECEMOS */
+/* Inicio - FAQs */
 
+.faqs-ancho {
+    max-width: 900px;
+
+}
+
+#FAQs {
+
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.TextoFaqs {
+
+    display: inline-block;
+    text-align: left;
+
+
+}
+
+
+
+/* Fin - FAQs */
+
+
+/* Inicio - Formulario */
+
+
+#form {
+
+    background-color: #83D0D2;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+
+.form-ancho {
+    max-width: 450px;
+
+}
+
+
+#form h1 {
+
+    font-weight: 400;
+    color: #191B46;
+    text-align: center;
+    position: relative;
+
+}
+
+
+
+#form p {
+
+    color: #191B46;
+    text-align: center;
+    position: relative;
+
+}
+
+.TextoIntro3 {
+
+    margin-bottom: 40px;
+    text-align: center;
+
+
+}
+
+
+
+/* Fin - Formulario */
+
+
+/* Fin - INDEX.HTML */
+
+
+/* Inicio - QUE-OFRECEMOS.HTML */
+
+
+.TextoIntro4 {
+
+
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
 
 #que-ofrecemos {
     background-color: #191B43;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
+    padding-top: 160px;
+    padding-bottom: 80px;
+
 }
 
 
@@ -180,11 +305,10 @@ html {
 #que-ofrecemos p {
 
     margin-bottom: 20px;
-color: #ffffff;
+    color: #ffffff;
 
 
 }
-
 
 
 .que-ofrecemos-item h3 {
@@ -193,59 +317,96 @@ color: #ffffff;
     margin-bottom: 20px;
 }
 
-.item-margen{
+.item-margen {
 
     margin-top: 40px;
 }
 
-.btn-outline-primary {
+/* Botón fondo celeste/beige */
+
+
+.btn {
+
+    --bs-btn-border-radius: 0rem;
+    --bs-btn-color: #181B49;
+    --bs-btn-border-color: #181B49;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #181B49;
+    border-color: #ffffff;
+
+}
+
+
+/* Botón fondo azul */
+
+.btn2 {
+
     --bs-btn-border-radius: 0rem;
     --bs-btn-color: #ffffff;
     --bs-btn-border-color: #ffffff;
 }
 
-.btn:hover {
+.btn2:hover {
+
     color: #181B49;
-    --bs-btn-border-color: #ffffff;
     background-color: #83D0D2;
-    border-color: #ffffff;
+    border-color: #181B49;
+
 }
-    .btn2 {
-        --bs-btn-border-radius: 0rem;
-        --bs-btn-color: #181B49;
-        --bs-btn-border-color: #181B49;
+
+#evento-promocion {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Evento bafweek grande */
+
+
+.test {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+
+
+    .texto-evento-promo {
+        padding-top: 60px;
 
     }
 
- 
-    .btn2:hover {
-        color: #ffffff;
-        --bs-btn-border-color: #ffffff;
-        background-color: #181B49;
-       
-    }
-        .btn2 {
-            --bs-btn-border-radius: 0rem;
-    
-        }
-    
+}
+
+/* Fin - QUE-OFRECEMOS.html */
 
 
 
-   
-/* Fin - QUE OFRECEMOS */
+
+/* Inicios EVENTOS.HTML */
+
+
+
 
 /* Inicio - EVENTO DESTACADO */
 
 #eventos {
-    padding-top: 80px;
+
+    padding-top: 160px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
+
 
 .TextoIntro2 {
 
 
-   margin-bottom: 50px;
-   max-width: 100%;
+    margin-bottom: 50px;
+    max-width: 100%;
 
 }
 
@@ -255,7 +416,7 @@ color: #ffffff;
     font-weight: 400;
     color: #181B49;
     text-align: center;
-    
+
 }
 
 .TextoIntro2 p {
@@ -263,7 +424,7 @@ color: #ffffff;
     text-align: center;
 }
 
-.ancho-maximo{
+.ancho-maximo {
     max-width: 100%;
 }
 
@@ -297,74 +458,74 @@ color: #ffffff;
     flex-direction: row;
     font-size: 30px;
 
-  
-    
-  }
-  
-  .flex-item-left {
- 
+
+
+}
+
+.flex-item-left {
+
     flex: 50%;
     display: flex;
     justify-content: right;
-    
-    
-  }
-  
-  .flex-item-right {
-   
+
+
+}
+
+.flex-item-right {
+
     flex: 50%;
     display: flex;
-align-items: flex-end;
-  
-
-  }
+    align-items: flex-end;
 
 
-  .evento-fotografia {
+}
 
-    
+
+.evento-fotografia {
+
+
     margin-top: 40px;
     margin-bottom: 40px;
-  }
+}
 
-  .texto-fotografia {
+.texto-fotografia {
     padding-top: 20px;
 
-  }
-  
-  /* Responsive */
-  @media (max-width: 699px) {
+}
+
+/* Responsive */
+@media (max-width: 699px) {
     .flex-container {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .flex-item-left {
- 
+
         flex: 50%;
         display: flex;
         justify-content: center;
-        
-        
-      }
-      
-      .flex-item-right {
-       
+
+
+    }
+
+    .flex-item-right {
+
         flex: 50%;
         display: flex;
-    justify-content: center;
-      
-    
-      }
-  }
+        justify-content: center;
 
-   /* Ajuste tamaño img  */ 
 
-  @media (min-width: 700px) and (max-width: 990px) {
+    }
+}
 
-.flex-item-left img{
-   width: 244px;
-   height: 405px;
-  }
+/* Ajuste tamaño img  */
+
+@media (min-width: 700px) and (max-width: 990px) {
+
+    .flex-item-left img {
+        width: 244px;
+        height: 405px;
+    }
 }
 
 /* Fin - EVENTO DESTACADO */
@@ -378,135 +539,321 @@ align-items: flex-end;
 }
 
 
-.card-estilo{
+.card-estilo {
 
-    background-color: #F3F0E4;
-    border-radius: 7%;
+    background-color: #f5f1e2;
     padding: 10px;
     color: #181B49;
     border: hidden;
 
 }
 
-.card-margenes {
-padding-bottom: 0px;
-    
+.card-estilo-grande {
+
+    background-color: #f5f1e2;
+    padding: 50px;
+    color: #181B49;
+    border: hidden;
 }
 
-.card-margenes h3{
+
+.card-margenes {
     padding-bottom: 0px;
-        
-    }
 
-    .card:hover
-    {
-            background:#f5f1e2;
-            -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-            
+}
 
-    }
+.card-margenes h3 {
+    padding-bottom: 0px;
+
+}
+
+.card-efecto:hover {
+    background: #f5f1e2;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+
+
+}
 
 
 
 /* Fin - CARDS EVENTOS */
 
 
-/* Inicio - CARDS COMUNIDAD */
 
-.user-img {
-
-    width: 120.56px;
-    height: 134.83;
-}
-
-/* FIN - CARDS COMUNIDAD */
+/* Fin EVENTOS.HTML */
 
 
+/* Inicio COMUNIDAD.HTML */
 
-/* INICIO - FAQS */
 
-.faqs-ancho {
-max-width: 900px;
+#comunidad {
 
-}
-
-#FAQs {
-
-    text-align: left;
-    padding-top: 130px;
+    padding-top: 160px;
     padding-bottom: 80px;
-}
-
-.TextoFaqs {
-
-    display: inline-block;
-    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 
 
 }
 
 
+.card-usuario {
 
-/* FIN - FAQS */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+}
 
-
-/* INICIO - FORM */
-
-
-#form {
-
-    background-color: #83D0D2;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    
-
+.card-usuario:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
-.form-ancho {
-    max-width: 450px;
-    
-    }
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 240px 240px;
+    grid-template-columns: 33, 33% 33, 33%;
+    grid-template-areas:
+        '. img1 img1 img2 img2 .'
+        '. img3 img3 img4 img4 .';
+
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
 
 
- #form h1 {
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.intro {
+    padding: 10px;
+    /* height: 230px; */
+}
 
-        font-weight: 400;
-        color: #191B46;
-        text-align: center;
-        position: relative;
-    
-    }
+.img1 {
+    grid-area: img1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2 {
+    grid-area: img2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img3 {
+    grid-area: img3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img4 {
+    grid-area: img4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
- #form p {
+.intro {
+    grid-area: intro;
 
-    color: #191B46;
+}
+
+.intro h1 {
+
+    font-weight: 400;
+    color: #181B49;
     text-align: center;
-    position: relative;
 
 }
 
-.TextoIntro3{
+.intro p {
 
-    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img,
+.img6 img {
+
+    height: 165px;
+
+}
+
+
+/* Responsive  */
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-areas:
+            'img1 img1'
+            'img2 img2'
+            'img3 img3'
+            'img4 img4';
+    }
+
+
+}
+
+/* Fin COMUNIDAD.HTML */
+
+
+/* Inicio SOBRE-EL-PALACIO.HTML */
+
+
+
+#sobre-el-palacio {
+
+    padding-top: 90px;
+    padding-bottom: 60px;
+   padding-left: 0px;
+    padding-right: 0px;
+
+
 }
 
 
 
+/* The grid container */
+.container-padre {
+    display: grid;
+    grid-template-areas:
+      'video video video video video video' 
+      'left left middle middle right right' 
+      'parrafo parrafo parrafo imagen imagen imagen';
+   
+  } 
+  
+  .left,
+  .middle,
+  .right
+   {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  .imagen {
+    grid-area: imagen;
+    padding: 0px;
+    text-align: center;
+    padding-top: 60px;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 100px;
+  } 
+
+  .imagen img {
+
+    width: 100%;
+  }
+
+ 
+
+  /* Style the footer */
+  .parrafo {
+    grid-area: parrafo;
+    padding-top: 60px;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 50px;
+   
+  }
+  
+
+  .video-intro {
+    grid-area: video;
+
+  }
+
+  .video-intro video{
+    grid-area: header;
+    background-color: #f1f1f1;
+    width: 100%;
+
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 720px) {
+    .container-padre  {
+      grid-template-areas: 
+
+      'video video video video video video' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'parrafo parrafo parrafo parrafo parrafo parrafo'
+      'imagen imagen imagen imagen imagen imagen';
+        
+    }
+
+    .parrafo,
+    .imagen {
     
+        padding-left: 30px;
+        padding-right: 30px;
+       
+      }
 
-/* FINAL - FORM */
+      
+  }
+
+
+  .bi-book, 
+  .bi-brush, 
+  .bi-people {
+
+    font-size: 5rem; 
+    color: #83D0D2;
+  }
+
+
+
+
+/* Final SOBRE-EL-PALACIO.HTML */
+
+
+/* Inicio FOOTER */
+
 
 footer {
 
     height: 255px;
     background-color: #191B46;
-
-   
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
@@ -517,13 +864,13 @@ footer {
 .grupo {
     display: flex;
     align-items: center;
-  }
+}
 
 
-  .grupo2 {
+.datos2 {
     display: flex;
     align-items: center;
-  }
+}
 
 .txt-footer {
     margin-bottom: 0px;
@@ -540,15 +887,16 @@ footer {
 
 
 
-.logo-footer img{
+.logo-footer img {
     width: 41px;
     height: 80.36px;
 
 }
+
 .logo-footer {
-  
+
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
     margin-bottom: 40px;
 
 
@@ -557,187 +905,93 @@ footer {
 .footer-derechos {
 
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
 
 
 }
 
-/* INICIO ajustes footer tamaño pequeño  */ 
+/* INICIO ajustes footer tamaño pequeño  */
 
-@media  (max-width: 575px) {
+@media (max-width: 575px) {
 
 
     footer {
 
         height: 400px;
         background-color: #191B46;
-    
-       
         padding-top: 30px;
         padding-bottom: 50px;
         color: white;
-    
-    }
-    
 
-   .grupo {
-    display: flex;
-    align-items: center;
-  }
-
-
-  .grupo2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-.texto{
-    margin-right:20px;
-}
-
-
-
-
-.datos {
-    display: flex;
-
-    margin-bottom: 55px;
-    justify-content: center;
-    
-}
-
-
-.bi {
-    margin-right: 10px;
-}
-
-
-
-.logo-footer img{
-    width: 41px;
-    height: 80.36px;
-    
-
-}
-.logo-footer {
-  
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-
-
-}
-
-.footer-derechos {
-
-    display: flex;
-    justify-content: center;
-   
-
-}
-
-.sm-margin {
-
-    margin-bottom: 55px;
-}
     }
 
-/* FIN ajustes footer tamaño pequeño  */ 
 
-
-
-
-
-
-
-/* INICIO SECCIÓNN BAJOS DEL BAROLO  */ 
-
-/* Style the header */
-.header {
-    grid-area: header;
-
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-  }
-  
-  /* Contenedor padre */
-  .grid-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns:10%  25%;
-
-
-    margin-top: 100px;
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left right right right' 
-      'cierre cierre cierre cierre cierre cierre';
-    /* grid-column-gap: 10px; - if you want gap between the columns */
-
-  } 
-  
-  .left,
-  .middle,
-  .right {
-    padding: 10px;
-    
-   
-  }
-  
-  .left {
-    grid-area: left;
-  }
-  
-  .middle {
-    grid-area: middle;
-  }
-  
-  .right {
-    grid-area: right;
-  }
-  
-  .cierre {
-    grid-area: cierre;
-    padding: 10px;
-    text-align: center;
-  }
-
-
-  .TextoIntro3 {
-
-
-    margin-bottom: 30px;
-    margin-top: 30px;
-    max-width: 100%;
-
- 
- }
- 
- 
- .TextoIntro3 h1 {
- 
-     font-weight: 400;
-     color: #181B49;
-     text-align: center;
-     
- }
- 
- .TextoIntro3 p {
- 
-     text-align: center;
- }
- 
-  
-  /* Responsive  */
-  @media (max-width: 600px) {
-    .grid-container  {
-      grid-template-areas: 
-        'header header header header header header' 
-        'left left left left left left' 
-        'right right right right right right' 
-        'cierre cierre cierre cierre cierre cierre';
+    .grupo {
+        display: flex;
+        align-items: center;
     }
-  }
+
+
+    .datos2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .texto {
+        margin-right: 20px;
+    }
+
+
+
+
+    .datos {
+        display: flex;
+
+        margin-bottom: 55px;
+        justify-content: center;
+
+    }
+
+
+    .bi {
+        margin-right: 10px;
+    }
+
+
+
+    .logo-footer img {
+        width: 41px;
+        height: 80.36px;
+
+
+    }
+
+    .logo-footer {
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+
+    }
+
+    .footer-derechos {
+
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .sm-margin {
+
+        margin-bottom: 55px;
+    }
+}
+
+/* FIN ajustes footer tamaño pequeño  */
+
+
+/* Fin FOOTER */

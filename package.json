@@ -1,21 +1,22 @@
 {
-  "name": "preentrega2-tejedor",
+  "name": "preentrega3-tejedor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web turística del Palacio Barolo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jptejedor/PreEntrega2-Tejedor.git"
+    "url": "git+https://github.com/jptejedor/PreEntrega3-Tejedor.git"
   },
-  "author": "",
+  "author": "Juan Pablo Tejedor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jptejedor/PreEntrega2-Tejedor/issues"
+    "url": "https://github.com/jptejedor/PreEntrega3-Tejedor/issues"
   },
-  "homepage": "https://github.com/jptejedor/PreEntrega2-Tejedor#readme",
+  "homepage": "https://github.com/jptejedor/PreEntrega3-Tejedor#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"

@@ -1,0 +1,35 @@
+/* Botón fondo celeste/beige */
+
+
+.btn {
+
+    --bs-btn-border-radius: 0rem;
+    --bs-btn-color: $azul;
+    border-color: $azul;
+
+    &:hover {
+        color: #ffffff;
+        background-color: $azul;
+        border-color: #ffffff;
+
+    }
+}
+
+
+/* Botón fondo azul */
+
+.btn2 {
+
+    --bs-btn-border-radius: 0rem;
+    --bs-btn-color: #ffffff;
+    border-color: #ffffff;
+
+    &:hover {
+
+        color: $azul;
+        background-color: $celeste;
+        border-color: $azul;
+
+    }
+
+}

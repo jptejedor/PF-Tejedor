@@ -1,0 +1,29 @@
+/* Inicio - HEADER/NAV */
+
+.navbar {
+
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+.bg-body-tertiary {
+    background-color: $beige !important;
+}
+
+
+.nav-link {
+
+    &:hover {
+        color: $celeste;
+    }
+}
+
+/* Fin - HEADER/NAV */

@@ -1,0 +1,49 @@
+/* Inicio - Formulario */
+
+$estilos: (
+  text-align: center,
+);
+
+
+#form {
+
+    background-color: $celeste;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    h1 {
+
+        font-weight: 400;
+        color: $azul;
+        text-align: map-get($estilos, text-align);
+        position: relative;
+
+    }
+
+
+    p {
+
+        color: $azul;
+        text-align: map-get($estilos, text-align);
+        position: relative;
+
+    }
+
+}
+
+.form-ancho {
+    max-width: 450px;
+
+}
+
+
+.TextoIntro3 {
+
+    margin-bottom: 40px;
+    text-align: map-get($estilos, text-align);
+
+}
+
+/* Fin - Formulario */

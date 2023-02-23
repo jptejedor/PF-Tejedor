@@ -1,0 +1,50 @@
+.eventos-destacados {
+
+    img {
+
+        @include sizes(210px, 288px);
+
+    }
+
+}
+
+
+.card-estilo {
+
+    background-color: $beige2;
+    padding: 10px;
+    color: $azul;
+    border: hidden;
+
+}
+
+.card-estilo-grande {
+
+    @extend .card-estilo;
+    padding: 50px;
+
+}
+
+
+.card-margenes {
+
+    padding-bottom: 0px;
+
+    h3 {
+        padding-bottom: 0px;
+
+    }
+
+}
+
+
+.card-efecto {
+
+    &:hover {
+        background: $beige2;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+}

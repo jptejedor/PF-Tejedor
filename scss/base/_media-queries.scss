@@ -1,0 +1,47 @@
+
+@media (max-width: 560px) {
+
+    #que-ofrecemos .container {
+        padding-left: $padding-mobile;
+        padding-right: $padding-mobile;
+    }
+
+    .margen {
+        padding-left: $padding-mobile;
+        padding-right: $padding-mobile;
+
+    }
+
+    #evento-promocion .container {
+        padding-left: $padding-mobile;
+        padding-right: $padding-mobile;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    .texto-fotografia {
+
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .nav-mobile {
+        margin-left: $margin-mobile;
+        margin-right: $margin-mobile;
+    }
+}

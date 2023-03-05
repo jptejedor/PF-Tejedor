@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Recoleta";
+}
+
+
+html {
+
+    font-size: 62.5%;
+}
+
+
+body {
+
+    background-color: $beige;
+
+}
+
+
+/* PADDING SECCIONES */
+
+
+/* Sobre el palacio */
+
+#sobre-el-palacio {
+
+    padding-top: 90px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+
+}
+
+/* Eventos */
+
+.eventos {
+
+    padding-top: 160px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/* Que ofrecemos */
+
+#que-ofrecemos {
+    background-color: $azul;
+    @extend .eventos;
+
+    h1 {
+
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+
+    }
+
+
+    p {
+
+        margin-bottom: 20px;
+        color: #ffffff;
+
+    }
+
+}
+
+
+/* Comunidad */
+
+#comunidad {
+
+    @extend .eventos;
+
+}

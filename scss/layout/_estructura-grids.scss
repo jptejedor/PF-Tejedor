@@ -1,0 +1,116 @@
+/* Inicio SOBRE-EL-PALACIO */
+
+
+.container-padre {
+    display: grid;
+    grid-template-areas:
+        'video video video video video video'
+        'left left middle middle right right'
+        'parrafo parrafo parrafo imagen imagen imagen';
+
+}
+
+.left {
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.middle {
+
+    @extend .left;
+
+}
+
+.right {
+
+    @extend .left;
+}
+
+
+@each $grid-area in left,
+middle,
+right {
+    .#{$grid-area} {
+        grid-area:#{$grid-area};
+    }
+}
+
+.imagen {
+    grid-area: imagen;
+    padding: 0px;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 100px;
+
+    img {
+
+        width: 100%;
+    }
+
+}
+
+
+.parrafo {
+    grid-area: parrafo;
+    padding-top: 60px;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 50px;
+
+}
+
+
+.video-intro {
+    grid-area: video;
+
+    video {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* Responsive  */
+@media (max-width: 720px) {
+    .container-padre {
+        grid-template-areas:
+
+            'video video video video video video'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'parrafo parrafo parrafo parrafo parrafo parrafo'
+            'imagen imagen imagen imagen imagen imagen';
+
+    }
+
+    .parrafo,
+    .imagen {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+
+}
+
+.bi-book {
+    font-size: 5rem;
+    color: $celeste;
+}
+
+.bi-brush {
+    @extend .bi-book;
+}
+
+.bi-people {
+    @extend .bi-book;
+}
+
+/* Fin SOBRE-EL-PALACIO */
+

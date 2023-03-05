@@ -1,0 +1,19 @@
+#evento-promocion {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+
+
+    .texto-evento-promo {
+        padding-top: 60px;
+
+    }
+
+}

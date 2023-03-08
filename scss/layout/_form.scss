@@ -9,18 +9,14 @@
     h1 {
 
         font-weight: 400;
-        color: $azul;
-        text-align: map-get($estilos, text-align);
-        position: relative;
+        @include form-texto;
 
     }
 
 
     p {
 
-        color: $azul;
-        text-align: map-get($estilos, text-align);
-        position: relative;
+        @include form-texto;
 
     }
 

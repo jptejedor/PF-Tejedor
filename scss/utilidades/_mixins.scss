@@ -3,3 +3,25 @@
     height: $height;
 
 }
+
+@mixin fuente-y-color {
+    font-weight: 400;
+    color: $azul;
+
+}
+
+@mixin flex-item {
+    flex: 50%;
+    display: flex;
+}
+
+@mixin footer-flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin form-texto {
+    color: $azul;
+    text-align: map-get($estilos, text-align);
+    position: relative;
+}

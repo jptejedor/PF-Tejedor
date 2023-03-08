@@ -7,14 +7,13 @@ footer {
     background-color: $azul;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: white;
+    color: $blanco-puro;
 
 }
 
 
 .grupo {
-    display: flex;
-    align-items: center;
+    @include footer-flex;
 }
 
 
@@ -69,20 +68,18 @@ footer {
         background-color: $azul;
         padding-top: 30px;
         padding-bottom: 50px;
-        color: white;
+        color: $blanco-puro;
 
     }
 
 
     .grupo {
-        display: flex;
-        align-items: center;
+        @include footer-flex;
     }
 
 
     .datos2 {
-        display: flex;
-        align-items: center;
+        @include footer-flex;
         justify-content: center;
 
     }
@@ -94,7 +91,6 @@ footer {
 
     .datos {
         display: flex;
-
         margin-bottom: 55px;
         justify-content: center;
 

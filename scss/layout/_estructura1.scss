@@ -18,14 +18,12 @@
 }
 
 .subtitulos {
-    font-weight: 400;
-    color: $azul;
+    @include fuente-y-color;
     text-align: left;
 }
 
 .titulos-centrados{
-    font-weight: 400;
-    color: $azul;
+    @include fuente-y-color;
     text-align: center;
 }
 
